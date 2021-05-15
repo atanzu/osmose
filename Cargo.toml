@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+    "osmose-generated",
+    "osmose-identifier",
+    "osmose-server",
+    "osmose-client",
+    "samples/simple_client_server/scs_server",
+    "samples/simple_client_server/scs_client",
+]

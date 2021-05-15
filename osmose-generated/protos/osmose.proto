@@ -1,0 +1,27 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+
+message Identifier {
+  string name = 1;
+  uint64 id = 2;
+}
+
+message DecisionRequest {
+  Identifier source = 1;
+  Identifier destination = 2;
+  bytes payload = 3;
+}
+
+enum Decision {
+  GENERAL_ERROR = 0;
+  ALLOW = 1;
+  SOURCE_UNKNOWN = 2;
+  DISALLOWED_DESTINATION = 3;
+  MESSAGE_EMPTY = 4;
+  MALFORMED_MESSAGE = 5;
+}
+
+message DecisionResponse {
+  Decision decision = 1;
+}
+

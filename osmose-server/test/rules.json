@@ -1,0 +1,34 @@
+[
+    {
+        "source": {
+            "name": "process1",
+            "pid": 1234
+        },
+        "destinations": [
+            {
+                "name": "process2",
+                "pid": 5678,
+                "message_rules": []
+            },
+            {
+                "name": "process3",
+                "pid": 2322,
+                "message_rules": []
+            }
+        ]
+    },
+    {
+        "source": {
+            "name": "process2",
+            "pid": 5678
+        },
+        "destinations": [
+            {
+                "name": "process1",
+                "pid": 9999,
+                "message_rules": []
+            }
+        ]
+    }
+]
+

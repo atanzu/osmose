@@ -1,0 +1,11 @@
+[package]
+name = "osmose-generated"
+version = "0.1.0"
+authors = ["Mark Kirichenko <atanzuuu@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+protobuf = "2.23"
+
+[build-dependencies]
+protobuf-codegen-pure = "2.23"
